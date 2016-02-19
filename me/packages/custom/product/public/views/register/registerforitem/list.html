@@ -1,0 +1,5 @@
+<div ng-controller="ListItemRegisterController">
+    <h4>Report: <button type="button" class="fa fa-file-excel-o btn btn-primary btn-lg" csv-header="getHeader" ng-csv="getData"filename="{{ filename }}.csv">Export Excell</button></h4>
+
+    <div  id="grid1" external-scopes="clickHandler" ui-grid="gridOptions" class="uigrid"></div>
+</div>

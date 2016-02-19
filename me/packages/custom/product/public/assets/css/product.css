@@ -1,0 +1,167 @@
+.navbar-button-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+
+/* icon bar prettyup - optional */
+.navbar-button-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+    background: white;
+}
+
+/* http://css-tricks.com/examples/hrs/ */
+
+hr.style-fade {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+hr.style-dollar {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-dollar:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+.frontcover{
+    /*background:#7f7f7f;
+    background:rgba(255,255,255,0.5);
+   */
+    /* min-width:960px;
+     width: 500px; */
+}
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 45px;
+    height: 42px;
+    padding: 4px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 32px Arial, sans-serif;
+}
+
+
+.eventtile {
+    width: 380px;
+    background:#f7f7f7;
+    border: 1px solid #FFF2F2;
+    border-radius: 7px;
+    -webkit-column-break-inside: avoid;
+    -moz-columsn-bresak-inside: avoid;
+    column-break-inside: avoid;
+}
+
+.activitiestile {
+    width: 220px;
+    margin-top: 35px;
+    padding: 15px;
+    background: #fcfcfc;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+
+
+.grid {
+    width: 400px;
+    height: 250px;
+}
+
+.panel-body-gray{
+    /*background-color: #fcfcfc;*/
+    margin: 0px auto;
+    padding-right:24px;
+    padding-left:24px;
+}
+
+.panel-default-lighter-gray {
+    border-color: #FAFAFA;
+}
+
+h1 {
+    margin-top: 5px;
+}
+h3 {
+    font-size:30px;
+    margin: 30px 0 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+.bgimage {
+    text-align:right;
+    color:white;
+    background-size:cover;
+    height: 100%;
+    background-position: center center;
+}
+
+
+.ta-editor {
+    min-height: 300px;
+    width: 800px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
+
+.ta-editor-1 {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
+
+
+.mainleftpanel{
+    margin-left: 30px;
+
+}
+
+.uigrid {
+    width: 700px;
+    height: 1050px;
+}
+

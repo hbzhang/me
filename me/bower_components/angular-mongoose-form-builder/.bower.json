@@ -1,0 +1,39 @@
+{
+  "name": "angular-form-builder",
+  "main": [
+    "./dist/angular-form-builder.js",
+    "./dist/angular-form-builder-components.js"
+  ],
+  "homepage": "https://github.com/kelp404/angular-form-builder",
+  "description": "Drag and drop to build bootstrap forms in AngularJS.",
+  "keywords": [
+    "AngularJS",
+    "CoffeeScript",
+    "form"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.18",
+    "angular-mocks": ">=1.2.18",
+    "angular-validator": ">=0.2.3",
+    "jquery": "~2.1.0",
+    "angular-bootstrap": "latest",
+    "underscore": "latest",
+    "async": "latest"
+  },
+  "_release": "c0709f2a86",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c0709f2a86fdbe2ebe67c949fd43ac7199e642d2"
+  },
+  "_source": "https://github.com/vtrecsports/angular-mongoose-form-builder.git",
+  "_target": "*",
+  "_originalSource": "git+https://github.com/vtrecsports/angular-mongoose-form-builder.git"
+}

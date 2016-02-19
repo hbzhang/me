@@ -1,0 +1,20 @@
+<form form-for="formallProgramnames" service="CreateProgram"  submit-with="submit(data)" validation-failed="validationFailed()">
+
+            <ul class="list-unstyled">
+                <li ng-repeat="program in listallProgramnames">
+
+                    {{program.value}}
+                    <text-field label="Program Name"  placeholder="brian"  attribute="program.value" autofocus icon-after="fa fa-times" icon-after-clicked="removeProgram(program)"></text-field>
+                    <!--<text-field label="Program Description"  attribute="comments" multiline rows="4" placeholder="Go ahead, say anything."></text-field> -->
+
+                </li>
+
+                <select-field attribute="listallProgramnames" label="All Programs" options="listallProgramnames" multiple="true"></select-field>
+
+
+            </ul>
+
+            <submit-button label="Update"></submit-button>
+        </tab>
+
+</form>

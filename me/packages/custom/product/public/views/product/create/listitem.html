@@ -1,0 +1,22 @@
+<tabset>
+    <tab heading="Forms" active="true">
+
+        <div  class="pin" data-ng-repeat="form in allForms">
+            <div>
+                <h4>{{form.name[0].value}} </h4>
+            </div>
+            <div>
+                <ul class="unstyled">
+                    <li>
+                        <b>Program:</b> {{form.program[0].value}}
+                    </li>
+                    <li>
+                        <b>Description:</b> {{form.description[0].value}}
+                    </li>
+                </ul>
+            </div>
+            <a data-ng-href="/#!/createitem/new/{{form.id}}" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Add</a>
+        </div>
+
+    </tab>
+ <tabset>

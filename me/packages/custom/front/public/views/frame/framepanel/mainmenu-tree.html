@@ -1,0 +1,9 @@
+<div data-ng-controller="FrameMainPanelController">
+
+ <h4 class="secondarymenutitle"><b>{{displayedrootname}}</b></h4>
+<div ng-repeat="item in secondaryPorgrams">
+    <a href="#!/public/subprogram/{{item.parent}}-{{item.name}}" class="list-group-item">
+        {{item.name}}
+    </a>
+</div>
+</div>

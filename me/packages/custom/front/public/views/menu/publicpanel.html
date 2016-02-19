@@ -1,0 +1,14 @@
+<div class="menu-public" data-ng-controller="MenuController">
+    <ul class="nav" data-ng-repeat="program in uniqueAllPrograms track by $index">
+        <li id="stable">
+           <a href="#!/public/program/{{program.name}}-{{program.first_child}}" class="frontmainmenu">
+               <!-- <img  src="mean-admin/assets/img/icons/settings.png"> -->
+                {{program.name}}
+            </a>
+
+        </li>
+    </ul>
+    <div data-ng-init="openWide=false" class="hover-ninja" data-ng-class="{'wide':openWide}" data-ng-click="openWide=!openWide"></div>
+    <div class="ninja"></div>
+</div>
+

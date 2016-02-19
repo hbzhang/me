@@ -1,0 +1,40 @@
+<div class="panel-body">
+    <div class="row">
+
+        <div ng-repeat="element in DSATools" class="col-xs-6 col-sm-4">
+            <!--<a class="bootcards-summary-item" href="/contacts" data-pjax="#main"
+               data-title="Contacts" style="padding-top:35px;">
+            </a> -->
+
+
+            <a href ng-if="element.children.length>0" ng-click="get_DSATools_data(element.label)">
+                <i class="{{element.data.image.icon}}"></i>
+                <h5>
+                    {{element.label}}
+                    <span class="label label-info"></span>
+                </h5>
+            </a>
+
+            <a target="_blank" ng-if="element.children.length===0 && element.data.parent!==''"
+               ng-href="http://{{element.data.link}}">
+                <i class="{{element.data.image.icon}}"></i>
+                <h5>
+                    {{element.label}}
+                    <span class="label label-info"></span>
+                </h5>
+            </a>
+
+            <a target="_blank" ng-if="element.children.length===0 && element.data.parent===''"
+               ng-click="get_DSATools_data(element.data.link)">
+                <i class="{{element.data.image.icon}}"></i>
+                <h5>
+                    {{element.label}}
+                    <span class="label label-info"></span>
+                </h5>
+            </a>
+
+
+        </div>
+
+    </div>
+</div>

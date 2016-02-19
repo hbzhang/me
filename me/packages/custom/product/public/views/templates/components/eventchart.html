@@ -1,0 +1,15 @@
+<div data-ng-controller="EventChartController">
+
+<nvd3-pie-chart
+        data="exampleData"
+        id="{{'chart'+ $index}}"
+        width="550"
+        height="550"
+        x="xFunction()"
+        y="yFunction()"
+        tooltips="true"
+        tooltipcontent="toolTipContentFunction()">
+    <svg height="250"></svg>
+</nvd3-pie-chart>
+
+</div>

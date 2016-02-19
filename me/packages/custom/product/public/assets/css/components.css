@@ -1,0 +1,57 @@
+/*carousel*/
+ul[rn-carousel] {
+    width:400px;
+    height:200px;
+    margin: 0 auto;
+}
+
+.carousel5 li {
+    width:100%;
+    height:100%;
+    font-size:30px;
+    background-color: #ccc;
+}
+
+.carousel-display{
+    margin-top:20px;
+    display:inline-block;
+    text-align: center;
+}
+.arousel-display-fullscreen {
+    width:100%;
+    height:100%;
+}
+.arousel-display-fullscreen ul[rn-carousel] {
+    width:100%;
+    height:100%;
+}
+
+input.tiny {
+    width:50px;
+    text-align:center;
+}
+
+
+.arousel-display ul[rn-carousel-transition="hexagon"] {
+    margin-left:100px;
+}
+
+.custom-indicator span {
+    transition: all 0.3s ease-in;
+}
+.custom-indicator span.active {
+    color:yellow !important;
+}
+
+.ta-editor-template {
+    min-height: 30px;
+    width: 400px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
+
+
+

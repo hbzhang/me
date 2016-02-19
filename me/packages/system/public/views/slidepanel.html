@@ -1,0 +1,20 @@
+
+<div class="logo pull-left">
+
+    <div id="header">
+
+        <div data-ng-if="isAuthenticated" data-ng-include="'/product/views/slidepanels/userpanel.html'"></div>  <!-- data-ng-if="isAdmin" -->
+
+        <section data-ng-if="isAuthenticated" class="admin-menu-test"> <!--isAuthenticated -->
+            <div data-ng-include="'/front/views/menu/publicpanel.html'"></div>
+        </section>
+
+        <div data-ng-if="isAdmin && showmenu">
+            <section class="admin-menu">
+                <div data-ng-include="'/mean-admin/views/index.html'"></div>
+            </section>
+        </div>
+
+    </div>
+
+</div>

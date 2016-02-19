@@ -1,0 +1,20 @@
+
+<div data-ng-controller="UserPanelController">
+<pageslide  ps-class="ng-pageslide"  ps-open="showmenu" ng-if="displaymenu" >
+
+    <div class="userpanel" >
+        <ul class="nav menuitem" >
+            <li  id="stable" data-ng-repeat="item in availableMenu" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" ui-sref='{{item.link}}'>
+                <a  href="">
+                    {{item.label}}
+                    <img data-ng-show="item.icon" ng-src="{{item.icon}}">
+                   <!-- <img data-ng-show="!item.icon" src="product/assets/img/icons/settings.png"> .roles==='authenticated'-->
+                </a>
+                <div class="showbox" data-ng-class="{'wide': openWide}" mean-token="item.title">{{item.title}}</div>
+            </li>
+        </ul>
+        <div data-ng-init="openWide=false" class="hover-ninja" data-ng-class="{'wide':openWide}" data-ng-click="openWide=!openWide"></div>
+        <div class="ninja"></div>
+    </div>
+</pageslide>
+</div>

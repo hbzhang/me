@@ -1,0 +1,297 @@
+body, nav, ul, li, a,input,textarea,select  {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	line-height: 1.75em;
+    }
+
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+#graybar{
+	position: relative;
+	background: #444444;
+    }
+
+#graybar .container	{
+	position: relative;
+	padding: 1em 0em;
+	background: #444444;
+	}
+
+ #header,#header.container {
+    background: #aeaeae;
+    height: auto;
+    padding: 14px 8px 14px 4px;
+    border: 4px 8px 10px 4px solid #aeaeae;
+    }
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		top: 4.2em;
+		width: 200px;
+		height: 47px;
+		background: url(../images/logo.png);
+        background-color: #aeaeae;
+        background-repeat: no-repeat;
+	}
+ .logo #imageSize {
+    display: inline-block;
+    vertical-align: middle;
+    color: transparent;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.logo #imageSize .inner {
+
+    visibility: hidden;
+    }
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+
+
+	#main
+	{
+		border: 1px solid;
+		border-color: #e2e1dd;
+        padding: 10px 14px;
+	}
+ .topImage #imageSize {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+     margin: 0 ;
+}
+.topImage #imageSize .inner {
+    padding-top: 24.4%; /* height/width of image */
+    display: block;
+    height: 0;
+}
+.topImage #imageSize .inner  .container{}
+.topImage #imageSize { background-image: url("../images/banner1.png"); }
+/* menu here to end */
+.toggleMenu {
+    display:  none;
+    background: white;
+    vertical-align: middle;
+    padding: 10px 14px 0px 20px;
+    color: #333333;
+    float: right;
+
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+     background-color: #aeaeae;
+     padding:  12px 2px 2px;
+}
+.nav:before,
+.nav:after {
+    content: " ";
+    display: table;
+}
+
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    white-space:nowrap;
+    min-width: 15pc;
+    background-color:#c8c7c7;
+    border: thin solid white;
+    background-image: url("../images/logoSmall.png");
+    background-position: right;
+}
+.nav a {
+    padding: 7px 12px;
+    color:#444444;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: right;
+
+}
+.nav > li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.nav > li > ul > li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #EBEBEB;
+
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+    padding: 0;
+
+
+}
+.nav li li a {
+    display: block;
+    background-color: #EBEBEB;
+    position: relative;
+    z-index:100;
+    border: thin solid white;
+}
+.nav li li li a {
+    background: #dfdedd;
+    z-index:200;
+    border: thin solid white;
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px){
+    .active {
+        display: block;
+
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .nav > li > ul > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+    }
+    .nav ul {
+        display: block;
+
+
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+    .topImage #imageSize {
+        background-image: url("../images/bannerTab1.png");
+        }
+
+}
+@media screen  and (min-width: 600px) and (max-width: 768px) {
+    .active {
+        display: block;
+
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .nav > li > ul > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+    }
+    .nav ul {
+        display: block;
+
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+    .topImage #imageSize {
+        background-image: url("../images/bannerTabLS1.png");
+        }
+
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .active {
+        display: block;
+
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .nav > li > ul > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+
+    }
+    .nav ul {
+        display: block;
+
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+    .topImage #imageSize {
+        background-image: url("../images/bannerMobileLS1.png");
+        }
+}
+@media screen and (max-width: 320px) {
+    /* mobile  */
+    .active {
+        display: block;
+
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .nav > li > ul > li > .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+
+    }
+    .nav ul {
+        display: block;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+    .topImage #imageSize {
+        background-image: url("../images/bannerMobile1.png");
+        }
+}

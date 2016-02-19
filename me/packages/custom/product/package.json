@@ -1,0 +1,19 @@
+{
+    "name": "product",
+    "version": "0.0.1",
+    "description": "A package for adding and registering classes.",
+    "author": {
+        "name": "Yuzhong Wen & Hongbo Zhang"
+    },
+    "mean": "0.4.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vtrecsports/me.git"
+     },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.4.x"
+    },
+    "dependencies": {},
+    "license": "MIT"
+}

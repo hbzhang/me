@@ -1,0 +1,13 @@
+{
+  "name": "chart",
+  "homepage": "https://github.com/vtrecsports/chart",
+  "_release": "b3c0dc6475",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b3c0dc64759dae5a4a55ec0fd6f8bafab1fc5e64"
+  },
+  "_source": "https://github.com/vtrecsports/chart.git",
+  "_target": "*",
+  "_originalSource": "git+https://github.com/vtrecsports/chart.git"
+}

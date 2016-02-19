@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="top-buffer"> <!--text-center-->
+    <div  ng-repeat="item in content">
+
+        <div ng-repeat="value in item.value.itembasicinformation">
+
+            <div ng-if="is_display_the_item(value)">
+
+            <b>{{value.label}}</b> : <div ng-bind-html="value.value| unsafe" class = "ta-scroll-window ng-scope ta-text ta-editor-2"></div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>

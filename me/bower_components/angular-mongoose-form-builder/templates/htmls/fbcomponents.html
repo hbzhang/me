@@ -1,0 +1,52 @@
+ 
+ <!--<ul ng-if="groups.length > 1" class="nav nav-tabs nav-justified">
+    <li ng-repeat="group in groups" ng-class="{active:activeGroup==group}">
+           <a href='#' ng-click="selectGroup($event, group)">{{group}}</a>
+    </li>
+ </ul>
+ <div class='form-horizontal'>
+    	<accordion close-others="oneAtATime">
+    	<accordion-group heading="asd" is-open="status.isFirstOpen" >
+    	  <div class='fb-component' ng-repeat="component in components"        
+    	  fb-component="component">
+    	   </div>
+    	</accordion-group>
+    	</accordion>
+ </div> 
+
+
+
+-->
+
+<tabset>
+        <tab heading={{group.name}} ng-repeat="group in nav_tree_array" >
+          <div class='form-horizontal'>
+            <accordion close-others="oneAtATime">
+                <accordion-group ng-repeat="item in child_array_accordin($event, group)"  heading={{item}} >
+
+                <div ng-if="!according_item_is_tabs($event, group,item )" class='fb-component' ng-repeat="component in child_array_components($event, group,item)"        
+                     fb-component="component">
+                </div>
+
+               <tabset ng-if="according_item_is_tabs($event, group,item )">
+                <tab heading={{tab[0].group}} ng-repeat="tab in child_array_tabs($event, group,item)"  >
+                
+                   <div class='fb-component' ng-repeat="component in child_array_tab_components($event, group,item,tab)"        
+                     fb-component="component">
+                </div>
+                </tab>
+               <tabset>
+
+              
+                 </accordion-group>
+             </accordion>
+          </div>
+        </tab>
+ <tabset>
+
+
+
+
+
+
+    

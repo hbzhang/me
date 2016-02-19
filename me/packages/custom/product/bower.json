@@ -1,0 +1,11 @@
+{
+    "name": "product",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular-file-upload": "latest",
+        "angular-ui-calendar": "latest",
+        "ng-focus-on": "latest",
+        "angular-gridster":"latest",
+        "ng-clip": "latest"
+    }
+}

@@ -1,0 +1,13 @@
+<tabset>
+    <tab heading="Create Class" active="true">
+        <!-- http://www.plugolabs.com/twitter-bootstrap-button-generator-3/ -->
+        <section data-ng-controller="ClassController" data-ng-init="getInstructors()">
+            <form name="classForm" class="form-horizontal col-md-8" role="form" data-ng-submit="classSubmit(classForm.$valid)" novalidate>
+                <div ng-include="'/product/views/product/class/edit_internal.html'"></div>
+            </form>
+        </section>
+    </tab>
+    <tab heading="List Classes"  select = "reloadAllClasses()" >
+        <div ng-include="'/product/views/product/class/list.html'"></div>
+    </tab>
+</tabset>

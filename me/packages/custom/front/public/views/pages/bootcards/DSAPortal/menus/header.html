@@ -1,0 +1,52 @@
+<div ng-controller="NavigationController">
+    <nav class="navbar navbar-clear" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                    ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">Sites</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+
+            <ul class="nav navbar-nav">
+                <li dropdown>
+                    <a href="#" dropdown-toggle>
+                        Dinning
+                        <b class='caret'></b>
+                    </a>
+                    <tree tree='tree'></tree>
+                </li>
+                <li dropdown>
+                    <a href="#" dropdown-toggle>
+                        Health ans Safety
+                        <span class='caret'></span>
+                    </a>
+                    <tree tree='tree'></tree>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li dropdown>
+                    <a href="#" dropdown-toggle>
+                        Housing and Residential
+                        <b class='caret'></b>
+                    </a>
+                    <tree tree='tree'></tree>
+                </li>
+                <li dropdown>
+                    <a href="#" dropdown-toggle>
+                        Student Activities
+                        <span class='caret'></span>
+                    </a>
+                    <tree tree='tree'></tree>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</div>

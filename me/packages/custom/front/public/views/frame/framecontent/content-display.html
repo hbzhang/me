@@ -1,0 +1,44 @@
+
+<div class=" bootcards-container" id="main">
+
+    <div class="row">
+
+        <div class="bootcards-cards">
+
+            <div class="bootcards-list" id="list" data-title="Notes">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <div id="wrapper" data-ng-controller="ContentDisplayController">
+
+                            <tabset>
+                                <tab heading="Form" active="true">
+                                <div ng-include="'front/views/frame/framecontent/content-display-builtinform.html'"></div>
+
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <input type="submit" ng-click="saveregisteries()" class="btn btn-default"/>
+                                    </div>
+                                </div>
+                                </tab>
+                                <tab heading="Information">
+                                    <div ng-include="'front/views/frame/framecontent/content-display-basicinformation.html'"></div>
+                                </tab>
+                                <tab heading="Results" select="getregisters()" data-ng-controller="RegistrationDisplayController">
+                                   <div ng-include="'front/views/frame/frameedit/registrationdisplay.html'"></div>
+                                </tab>
+                            </tabset>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

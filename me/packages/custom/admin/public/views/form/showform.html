@@ -1,0 +1,37 @@
+<div id="wrapper">
+
+    <div id="columns" ng-controller="ListFormController">
+
+        <div  class="pin" data-ng-repeat="form in allForms">
+
+            <div>
+                <h4>{{form.name[0].value}} </h4>
+            </div>
+            <div>
+                <ul class="unstyled">
+
+                    <li>
+                       <b>Program:</b> {{form.program[0].value}}
+                    </li>
+                    <li>
+                        <b>Description:</b> {{form.description[0].value}}
+                    </li>
+
+                </ul>
+            </div>
+            <div class="classedit" >
+                <div class="editbtns">
+                    <a class="btn" href="/#!/form/edit/{{form.id}}">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn" data-ng-click="removeForm(form)">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>

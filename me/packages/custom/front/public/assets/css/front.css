@@ -1,0 +1,76 @@
+.front-example h1 {
+  background-color: purple
+}
+.menu-public {
+    z-index:1;
+    position: fixed;
+    margin-top: 12px;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom right, #FFFFFF 0%, #EFEFEF 100%);
+    height: 100%;
+    top: 51px;
+    width: 95px;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: large;
+    border-radius: 1px 1px 1px 1px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    border: 1px solid #FFFFFF;
+}
+
+.secondarymenutitle{
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+
+.top-buffer { margin-top:20px;
+}
+
+.buttondemoBasicUsage {
+    /** From vulcanized demo **/
+}
+.buttondemoBasicUsage section {
+    background: #f7f7f7;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px;
+}
+.buttondemoBasicUsage md-content {
+    margin-right: 7px;
+}
+
+.buttondemoBasicUsage section .md-button:not(.md-fab) {
+    min-width: 10em;
+}
+
+.buttondemoBasicUsage section .md-button {
+    display: block;
+    margin: 1em;
+    line-height: 25px;
+}
+
+.buttondemoBasicUsage .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.frontmainmenu{
+
+    word-wrap: break-word;
+}
+
+ta-editor-2 {
+    min-height: 100px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 20px 0;
+}
+
+

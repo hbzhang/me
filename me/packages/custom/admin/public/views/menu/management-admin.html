@@ -1,0 +1,53 @@
+<div class=" bootcards-container" id="main" ng-if="displaytheitem">
+
+    <div class="row">
+
+        <div class="bootcards-cards">
+
+            <div class="bootcards-list" id="list" data-title="Notes">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                            <tabset>
+                            <tab heading="List" active="true">
+
+                                <!-- http://www.plugolabs.com/twitter-bootstrap-button-generator-3/ -->
+                                <div id="wrapper">
+
+                                    <div  class="pin" ng-repeat="item in availableFactoryMenu">
+                                        <h3> {{item.name}}</h3>
+                                        <a ui-sref="{{item.url}}" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Add </a>
+                                    </div>
+                                </div>
+                                <!-- <div ng-include="'/admin/views/permission/permissionmanage.html'"></div>
+                                <div  class="pin">
+                                        <h3>Program</h3>
+                                        <a data-ng-href="/#!/createprogram" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Add </a>
+                                </div>-->
+                            </tab>
+
+                            <!--<tab heading="List">
+                                    <div id="wrapper">
+                                        <div ng-include="'/admin/views/permission/permissionmanage.html'"></div>
+                                        <div  class="pin">
+                                            <h3>Form</h3>
+                                            <a data-ng-href="/#!/listform" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Show </a>
+                                        </div>
+                                        <div  class="pin">
+                                            <h3>Program</h3>
+                                            <a data-ng-href="/#!/listprogram" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Show </a>
+                                        </div>
+                                    </div>
+                            </tab> -->
+                            <tabset>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

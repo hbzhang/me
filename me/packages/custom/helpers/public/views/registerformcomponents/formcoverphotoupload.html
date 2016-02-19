@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label mean-token="'syllabus'" class="col-md-3 control-label">Form Cover Photo</label>
+    <label mean-token="'uploading'" class="col-md-3 control-label" ng-hide="tnuploadComplete">Uploading...</label>
+    <div class="col-md-9" ng-show="tnuploadComplete">
+        <ul class="unstyled">
+            <li ng-repeat="file in tnuploader.queue">{{file.file.name}}</li>
+        </ul>
+        <input nv-file-select type="file" name="tnuploads" uploader="tnuploader" accept="image/*"/>
+       <!-- <a ng-click="tnupload()">Upload</a> -->
+        <img class="thumbnail" ng-show="hasTn" src="{{inputText}}" />
+        <div ng-show="!hasTn" class="help-block">
+            <p ng-show="!hasTn">You have to specify a thumbnail</p>
+        </div>
+    </div>
+</div>

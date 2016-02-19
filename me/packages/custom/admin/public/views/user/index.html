@@ -1,0 +1,36 @@
+<div class=" bootcards-container" id="main" data-ng-controller="UserAdminEditController">
+    <div class="row" ng-if="displaytheitem">
+        <div class="bootcards-cards">
+            <div class="bootcards-list" id="list" data-title="Notes">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <tabset>
+                            <tab heading="List Users">
+                                <div  ui-grid="userGridOptions" class="useruigrid"></div>
+                            </tab>
+                            <tab heading="Edit User Roles" active="true">
+                                <!-- http://www.plugolabs.com/twitter-bootstrap-button-generator-3/ -->
+                                <div id="wrapper">
+                                    <div class="panel">
+                                        <div><strong>Search User (With Email): </strong><input type="text" class="form-control input-md" ng-change="refreshData()" ng-model="filterOptions.filterText" /></div>
+                                    </div>
+                                    <div class="panel">
+                                        <strong> User Information:</strong>
+                                    </div>
+
+                                    <div ng-include="'/admin/views/permission/permissionmanage.html'"></div>
+                                    <!--<input id="usersearch" type="text" class="form-control" ng-change="refreshData()" placeholder="text" ng-model="searchUserText"> -->
+                                    <div class="panel">
+                                        <input type="button" class="btn-primary btn-lg" ng-click="submit()" value="Save" />
+                                    </div>
+                                </div>
+                            </tab>
+                            <tabset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

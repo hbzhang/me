@@ -1,0 +1,9 @@
+<div class="form-group"  data-ng-controller="AdminProgramController">
+    <label for="{{formName+index}}" class="col-sm-4 control-label" ng-class="{'fb-required':required}">{{label}}</label>
+    <div class="col-sm-8" >
+        <select ng-options="value for value in allProgramnames" ng-model="inputText"  ng-init="inputText = allProgramnames[0]" validator-required="{{required}}" validator-group="{{formName}}" id="{{formName+index}}" class="form-control" placeholder="{{placeholder}}"/>
+        <!--<a data-ng-href="/#!/createprogram" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Add A Program</a> -->
+        <p class='help-block'>{{description}}</p>
+    </div>
+</div>
+

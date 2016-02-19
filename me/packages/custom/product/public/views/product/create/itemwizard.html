@@ -1,0 +1,26 @@
+<section id="main_content" class="inner main-inner" ng-controller="WizardCtrl">
+    <wizard on-finish="finished()">
+        <wz-step title="Item Basic Information">
+            <div  ng-include="'/product/views/product/create/itemfromform.html?item={{random}}'"></div>
+            <input type="submit" wz-next value="Next"/>
+        </wz-step>
+        <wz-step title="Item Form">
+            <h1>Form for the Item</h1>
+            <div ng-include="'/product/views/product/create/itemformbuilder.html'"></div>
+            <input type="submit" wz-next value="Next"/>
+        </wz-step>
+        <wz-step title="Review and Complete">
+            <h1>Carefully Review and Complete</h1>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-4">
+                    <input type="submit" ng-click="submit()" class="btn btn-default"/>
+                </div>
+            </div>
+
+            <input type="button" ng-click="goBack()" value="Click here to start again" />
+        </wz-step>
+    </wizard>
+</section>
+
+<toaster-container toaster-options="{'time-out': 300, 'close-button':true}"></toaster-container>
+

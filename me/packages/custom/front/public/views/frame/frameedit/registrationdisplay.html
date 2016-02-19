@@ -1,0 +1,68 @@
+<div class=" bootcards-container" id="main">
+
+    <div class="row">
+
+        <div class="bootcards-cards">
+
+            <div class="bootcards-list" id="list" data-title="Notes">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <div id="wrapper">
+
+                            <div id="columns">
+
+                                <div class="pin" ng-repeat="item in allRegisteredItems track by $index">
+
+                                    <div>
+
+                                        <h3 ng-if="allRegisteredItems.length===1">
+
+                                            <a href="#!/public/submission/{{wholeprogramforform}}-{{item.value._id}}">
+                                                Submission
+                                            </a>
+
+                                        </h3>
+                                        <h3 ng-if="allRegisteredItems.length>1">
+
+                                            <a href="#!/public/submission/{{wholeprogramforform}}-{{item.value._id}}">
+                                                Submission-{{$index+1}}
+                                            </a>
+
+                                        </h3>
+                                        <h4>
+                                            {{item.value.registercreatedtime}}
+                                        </h4>
+                                        <h4>
+                                            {{item.value.reasonforregister}}
+                                        </h4>
+
+                                        <div class="classedit" >
+                                            <div class="editbtns">
+
+                                                <a class="btn" data-ng-click="removeRegister(item)">
+                                                    <i class="glyphicon glyphicon-trash"></i>
+                                                </a>
+                                                <!-- <a data-ng-href="/#!/item/edit/{{item.id}}" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Show </a>
+                                                -->
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

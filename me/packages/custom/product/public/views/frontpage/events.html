@@ -1,0 +1,108 @@
+    <div class="bootcards-container" id="main"  ng-repeat="event in events  track by $index">
+
+        <div class="row">
+
+            <div class="bootcards-cards">
+
+                <div class="bootcards-list " id="list" data-title="Notes">
+
+                    <div class="panel panel-default-lighter-gray">
+                        <!-- <div class="numberCircle">{{ $index +1}}</div> -->
+
+                        <img style="width:35px" src="product/assets/img/ribbon.gif">
+
+                        <h2 class="text-center">{{eventinformation.eventname(event.eventbasicinformation)}}</h2>
+                    </div>
+
+                    <div class="panel panel-default-lighter-gray">
+                        <div class="panel-body">
+                            <tabset>
+                                <tab heading="Register" active="true">
+                                    <div class="row">
+                                        <hr/>
+                                        <form class="form-horizontal">
+                                            <!-- <div ng-repeat='form in forms'> -->
+
+                                            <div ng-model="input" fb-data="{{event}}" fb-form="{{eventinformation.eventname(event.eventbasicinformation)}}" fb-default="defaultValue"></div>
+
+                                            <!--
+                                                                                        <div ng-switch on="{{ $index}}">
+                                                                                            <div ng-switch-when="0">
+                                                                                                <div ng-model="input" fd-data = "event" fb-form="eventregister0" fb-default="defaultValue"></div>
+                                                                                            </div>
+                                                                                            <div ng-switch-when="1">
+                                                                                                <div ng-model="input" fd-data = "event" fb-form="eventregister1" fb-default="defaultValue"></div>
+
+                                                                                            </div>
+                                                                                            <div ng-switch-when="2">
+                                                                                                <div ng-model="input" fd-data = "event" fb-form="eventregister2" fb-default="defaultValue"></div>
+                                                                                            </div>
+                                                                                            <div ng-switch-when="3">
+                                                                                                <div ng-model="input" fd-data = "event" fb-form="eventregister3" fb-default="defaultValue"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                            -->
+
+                                            <div class="form-group">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <input type="submit" ng-click="submit(event._id)" class="btn btn-default"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!--
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" ng-model="isShowScope" ng-init="isShowScope=true" />
+                                                Show scope
+                                            </label>
+                                        </div>
+                                        <pre ng-if="isShowScope">{{input}}</pre> -->
+                                    </div>
+                                </tab>
+                                <tab heading="Event Information">
+                                    <h3>Date: {{eventinformation.eventdate(event.eventbasicinformation)}}</h3>
+
+                                    <h3>Location: {{eventinformation.eventlocation(event.eventbasicinformation)}}</h3>
+
+                                    <hr class="style-dollar"> </hr>
+
+                                    <div ng-bind-html="eventinformation.eventdescription(event.eventbasicinformation)| unsafe" class = "ta-scroll-window ng-scope ta-text ta-editor-1"></div>
+
+                                    <!--  <div ng-include="'/product/views/frontpage/frontpagechart.html'"></div> -->
+
+                                    <!--
+                                    <section data-ng-controller="navTreeController" data-ng-init="activityInit()">
+                                        <div style="width:250px;margin-left:1px;background:whitesmoke;border:1px solid lightgray;border-radius:5px;">
+                                            <span ng-if="doing_async">...loading...</span>
+                                            <abn-tree tree-data="my_data" tree-control="my_tree" on-select="my_tree_handler(branch)" expand-level="2" initial-selection="Granny Smith"></abn-tree>
+                                        </div>
+                                    </section>
+                                    -->
+                                </tab>
+                                <tab heading="QRCode" select="refresh(event)">
+                                    <div ng-if="registered(event)" ng-include="'/product/views/templates/components/qrcode.html'"></div>
+
+                                </tab>
+                            </tabset>
+
+<!--                       <div class="col-md-4 col-sm-4">
+
+
+                            </div>
+
+
+                            <div class="col-md-7 col-sm-7 col-md-offset-1 ">
+
+                            </div> -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+

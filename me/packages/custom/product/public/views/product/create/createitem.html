@@ -1,0 +1,9 @@
+<tabset>
+    <tab heading="Create" select = "clearitems()" active="true" ng-controller="CreateItemController">
+        <div ng-include="'/product/views/product/create/itemwizard.html'"></div>
+    </tab>
+    <tab heading="List"  select = "updateitems()" data-ng-controller="UpdateCreatedListItemController">
+        <div ng-include="'/product/views/product/create/listcreateditem.html'"></div>
+    </tab>
+</tabset>
+

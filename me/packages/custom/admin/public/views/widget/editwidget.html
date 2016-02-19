@@ -1,0 +1,34 @@
+<div  data-ng-controller="EditWidgetController">
+<section id="main_content" class="inner main-inner" ng-controller="WizardCtrl">
+    <div>
+        <wizard on-finish="finished()">
+            <wz-step title="Widget Basic Information">
+                <div ng-include="'/admin/views/widget/editwidgetbuiltinform.html'"></div>
+                <input type="submit" wz-next value="Next"/>
+            </wz-step>
+            <wz-step title="Widget Form Builder">
+                <h1>Form Information Elements</h1>
+                <div ng-include="'/admin/views/widget/editwidgetformbuilder.html'"></div>
+                <input type="submit" wz-next value="Next"/>
+            </wz-step>
+            <wz-step title="Privileges">
+                <!--<div ng-controller="UserRolesController">
+                    <js-tag js-tag-mode="typeahead" js-tag-options="role_TagOptions"></js-tag>
+                   Number of tags: {{tags.getNumberOfTags()}}
+                </div>
+                <div class="panel">
+
+                </div>-->
+
+                <input class="pull-right" type="button" ng-click="goBack()" value="Go to form basic information"/>
+                <div ng-include="'/admin/views/privilege/itemprivileges.html'"></div>
+                <div class="form-group">
+                    <div class="col-md-8 col-md-offset-4">
+                        <input type="submit" ng-click="submit()" class="btn btn-default"/>
+                    </div>
+                </div>
+            </wz-step>
+        </wizard>
+    </div>
+</section>
+</div>

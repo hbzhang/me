@@ -1,0 +1,8 @@
+<div data-ng-if="frontpageauthenticated">
+    <div data-ng-controller="EventRegisterController" ng-include="'/product/views/frontpage/leftcolumn.html'"></div>
+    <div ng-include="'/product/views/frontpage/rightcolumn.html'"></div>
+    <toaster-container toaster-options="{'time-out': 300, 'close-button':true}"></toaster-container>
+</div>
+
+
+<div data-ng-if="!frontpageauthenticated" data-ng-include="'/front/views/pages/landingpage/landingpage.html'"></div>

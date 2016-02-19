@@ -1,0 +1,10 @@
+<div class="form-group"  data-ng-controller="AdminWidgetTypeController">
+    <label for="{{formName+index}}" class="col-sm-4 control-label" ng-class="{'fb-required':required}">{{label}}</label>
+    <div class="col-sm-8" >
+        <select ng-options="value.name for value in allAvaiableWidgets" ng-model="inputText"    validator-required="{{required}}" validator-group="{{formName}}" id="{{formName+index}}" class="form-control" placeholder="{{placeholder}}"/>
+        <!--<a data-ng-href="/#!/createprogram" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-plus"></span> Add A Program</a> -->
+        <!-- ng-init="inputText = allAvaiableWidgets[0]" -->
+        <p class='help-block'>{{description}}</p>
+    </div>
+</div>
+

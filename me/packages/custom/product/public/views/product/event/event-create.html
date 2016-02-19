@@ -1,0 +1,8 @@
+<tabset>
+    <tab heading="Create Event" active="true">
+        <div ng-include="'/product/views/product/event/event-wizard.html'"></div>
+    </tab>
+    <tab heading="List Events" select = "reloadAllEvents()" data-ng-controller="EventListController">
+        <div ng-include="'/product/views/product/event/event-list.html'"></div>
+    </tab>
+</tabset>

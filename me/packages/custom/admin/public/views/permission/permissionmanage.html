@@ -1,0 +1,14 @@
+<div class="panel">
+<div class='permission'>
+    <p>User Name:{{userinformation[0].name}}</p>
+
+    <p>Email:{{userinformation[0].email}}</p>
+
+    <p>Roles:</p>
+    <tags-input ng-model="userroles">
+      <auto-complete source="loadTags($query)"></auto-complete>
+    </tags-input>
+
+
+</div>
+</div>

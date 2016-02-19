@@ -1,0 +1,66 @@
+
+<div class=" bootcards-container" id="main">
+
+    <div class="row">
+
+        <div class="bootcards-cards">
+
+            <div class="bootcards-list" id="list" data-title="Notes">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <div id="wrapper">
+
+                    <div id="columns" data-ng-controller="FrameMainContentController">
+
+                        <div  class="pin" ng-repeat="item in allItems">
+
+                            <div>
+
+                                <a href="#!/public/content/{{item.wholeprogram}}-{{item.value._id}}">
+                                    <img class="thumbnail"  src="{{item.coverphoto}}" />
+                                </a>
+
+                                <a href="#!/public/content/{{item.wholeprogram}}-{{item.value._id}}">
+                                <h3 class="text-center">
+                                    {{item.name}}
+
+
+                                </h3>
+                                </a>
+
+
+
+                                <!--<h3 ng-if="founditems.length>1">
+
+                                    <a href="#!/public/secondsubprogram/{{item.wholeprogram}}">
+                                        {{item.name}}
+                                    </a>
+
+                                </h3>
+                                <h4>
+                                    {{item.value.itemcreatedtime}}
+                                </h4>-->
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div ng-controller="EventCarouselController"   data-ng-init="getslidedata(event)">
+    <h3>You have registered for  {{slidesbyevents.length}} people. Use QR code below for checkin to this event. </h3>
+    <div class = "carousel-display" ng-if="slides.length > 0">
+        <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" rn-carousel-buffered class="carousel1">
+            <li ng-repeat="slide in slides">
+                <!-- <div ng-style="{'background-image': 'url(' + slide.image + ')'}"  class="bgimage"> -->
+                <div >
+                    <qrcode version="2" error-correction-level="M" size="200" data= "{{slide.url}}"  href={{slide.url}}"></qrcode>
+                </div>
+            </li>
+        </ul>
+        <div rn-carousel-indicators ng-if="slides.length > 1" slides="slidesbyevents" rn-carousel-index="carouselIndex"></div>
+
+    </div>
+</div>

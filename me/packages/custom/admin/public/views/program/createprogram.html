@@ -1,0 +1,32 @@
+<form form-for="formData" service="CreateProgram"  submit-with="submit(data)" validation-failed="validationFailed()">
+    <tabset>
+     <tab heading="Create Programs" active="true">
+    <collection-label attribute="programs" label="Add more programs (program example: Fitness-Personal Training)" help="Add more progams by clicking the add button">
+    </collection-label>
+
+    <div class="btn btn-primary" ng-click="addProgram()">
+        Add
+        <i class="fa fa-plus"></i>
+    </div>
+
+    <ul class="list-unstyled">
+        <li ng-repeat="program in formData.programs">
+
+            <text-field label="Program Name"  attribute="programs[{{$index}}].name" autofocus icon-after="fa fa-times" icon-after-clicked="removeProgram(program)"></text-field>
+            <!--<text-field label="Program Description"  attribute="comments" multiline rows="4" placeholder="Go ahead, say anything."></text-field> -->
+
+        </li>
+    </ul>
+
+    <submit-button label="Submit"></submit-button>
+    </tab>
+    <!-- <tab heading="List Programs">
+        <section>
+            <div ng-include="'/admin/views/program/listprogram.html'"></div>
+        </section>
+
+
+
+    </tab> -->
+
+</form>

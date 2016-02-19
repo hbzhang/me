@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label for="{{formName+index}}" class="col-sm-4 control-label" ng-class="{'fb-required':required}">{{label}}</label>
+    <div class="col-sm-4">
+ <!--<input type="text" ng-model="inputText" validator-required="{{required}}" validator-group="{{formName}}" id="{{formName+index}}" class="form-control" placeholder="{{placeholder}}"/>
+-->
+    <div ng-controller="CustomizedEventFormComponentController">
+            <button type="button" id="Add" class="btn btn-success" ng-click="addData(data)">Add a Person</button>
+            <button type="button" id="Remove" class="btn btn-success" ng-click="removeFirstRow()">Remove a Person</button>
+            <br>
+            <br>
+            <div  ui-grid="gridOptions" ui-grid-edit class="grid" external-scopes="myExternalScope"></div>
+
+   </div>
+
+    <p class='help-block'>{{description}}</p>
+
+  </div>
+</div>
+

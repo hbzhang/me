@@ -1,0 +1,38 @@
+<div class=" bootcards-container" id="main">
+
+
+    <div class="row">
+
+        <div class="bootcards-cards">
+
+            <div class="bootcards-list" id="list" data-title="Notes" data-ng-controller="EventFormBuilderController">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <tabset>
+                            <!--<tab heading="Create Event">
+
+                                <div ng-include="'/product/views/product/event/event-wizard.html'"></div>
+
+                            </tab> -->
+                            <tab heading="List Events" select = "reloadAllEvents()" data-ng-controller="EventListController">
+                                <section > <!-- data-ng-init="listClass()"> -->
+                                    <div ng-include="'/product/views/product/event/event-list.html'"></div>
+                                </section>
+                            </tab>
+                        </tabset>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+

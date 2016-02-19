@@ -1,0 +1,75 @@
+<div data-ng-controller="AdminPrivilegeController">
+<div ng-if="displaytheitem">
+    <h4 class="text-primary">Configure Menu Item Access Privileges</h4>
+
+    <section class="col-md-4 col-sm-4" class="container">
+        <!--<span ng-if="doing_async">...loading...</span> -->
+        <privilege-tree tree-data="my_data" tree-control="my_tree" on-select="my_tree_handler(branch)" expand-level="2" initial-selection="Granny Smith"></privilege-tree>
+    </section>
+
+    <section class="col-md-8 col-sm-8">
+        <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
+
+            <div >
+                <section class="text-center">
+                <button  ng-click="expand_all()" type="submit" class="btn btn-info">Expand All Menus</button>
+                <button  ng-click="collapse_all()" type="submit" class="btn btn-info">Collapse All Menus</button>
+                </section>
+                <label>Menu Name</label>
+                <input class="form-control" ng-model="$parent.treeitemname"/>
+                <section class="panel">
+                    <button ng-click="try_adding_a_root_branch()" class="btn btn-info">Add as Root Menu</button>
+                    <button ng-click="try_adding_a_branch()" class="btn btn-info">Add as Sub Menu</button>
+                    <!--<button type="submit" class="btn btn-info">Submit</button> -->
+                    <button  ng-click="try_deleting_a_branch()" type="delete" class="btn btn-info">Remove Menu</button>
+                    <button  ng-click="try_renaming_a_branch()" type="delete" class="btn btn-info">Rename Menu</button>
+                </section>
+                <label>Roles to Access the Item </label>
+                <!--<h2>{{output}}</h2> -->
+                <section  data-ng-controller="MultipleSelectController" >
+                <div
+                        isteven-multi-select
+                        input-model="inputprivileges"
+                        output-model="ouputprivileges"
+                        button-label="icon name"
+                        item-label="icon name maker"
+                        tick-property="ticked"
+                        > </div>
+                </section>
+
+                </br>
+
+                <section class="text-left">
+                <label>Menu Item Package Name (internal package name)</label>
+                <div dropdown-select="packageoptions"
+                     dropdown-model="packageoptionsselected"
+                     dropdown-item-label="text" >
+                </div>
+                </section>
+
+                </br>
+
+
+                <section class="text-center">
+                    <button  ng-click="save_changes()" type="submit" class="btn btn-info">Save Changes</button>
+                </section>
+
+                <section class="control-group" >
+                </section>
+
+
+
+            </div>
+
+        </div>
+        <div>
+            <!--<button ng-click="launchInlineModal()" class="btn btn-info">modal</button>  data-ng-controller="modalController" -->
+
+        </div>
+    </section>
+</div>
+</div>
+
+
+
+

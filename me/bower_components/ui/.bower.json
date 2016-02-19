@@ -1,0 +1,13 @@
+{
+  "name": "ui",
+  "homepage": "https://github.com/vtrecsports/ui",
+  "_release": "c31a6c22f7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c31a6c22f7e7847d666adc05e997cf669bc58e93"
+  },
+  "_source": "https://github.com/vtrecsports/ui.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/vtrecsports/ui.git"
+}

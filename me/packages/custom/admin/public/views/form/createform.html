@@ -1,0 +1,49 @@
+<tabset>
+    <tab heading="Create Form" select = "clearforms()"  data-ng-controller="CreateFormController">
+    <section id="main_content" class="inner main-inner" ng-controller="WizardCtrl" ng-init="init()" ng-if="displaytheitem">
+    <wizard on-finish="finished()">
+        <wz-step title="Form Basic Information">
+            <div ng-include="'/admin/views/form/builtinform.html'"></div>
+            <input type="submit" wz-next value="Next"/>
+        </wz-step>
+        <wz-step title="Form Builder">
+            <h1> Form builder</h1>
+            <div ng-include="'/admin/views/form/formbuilder.html'"></div>
+            <input type="submit" wz-next value="Next"/>
+        </wz-step>
+        <wz-step title="Privileges">
+            <input class="pull-right" type="button" ng-click="goBack()" value="Go to form basic information"/>
+            <div ng-include="'/admin/views/privilege/itemprivileges.html'"></div>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-4">
+                    <input type="submit" ng-click="submit()" class="btn btn-default"/>
+                </div>
+            </div>
+        </wz-step>
+    </wizard>
+   </section>
+    </tab>
+    <tab heading="List Forms" select = "updateforms()" active="true" data-ng-controller="UpdateListFormController">
+        <div class=" bootcards-container" id="main">
+
+            <div class="row">
+
+                <div class="bootcards-cards">
+
+                    <div class="bootcards-list" id="list" data-title="Notes">
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+
+                                <div id="wrapper">
+                                     <div ng-include="'admin/views/form/showform.html'"></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </tab>
+ <tabset>

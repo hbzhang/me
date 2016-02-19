@@ -1,0 +1,36 @@
+{
+  "name": "angular-validator",
+  "version": "0.2.5",
+  "main": [
+    "./dist/angular-validator.js",
+    "./dist/angular-validator-rules.js"
+  ],
+  "homepage": "https://github.com/kelp404/angular-validator",
+  "description": "AngularJS form validation.",
+  "keywords": [
+    "AngularJS",
+    "CoffeeScript",
+    "validation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.18",
+    "angular-mocks": ">=1.2.18"
+  },
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.5",
+    "commit": "2ae93aba8cd03a6e8c3a48a2ccc3f50b654ebeca"
+  },
+  "_source": "git://github.com/kelp404/angular-validator.git",
+  "_target": ">=0.2.3",
+  "_originalSource": "angular-validator"
+}
